@@ -2,11 +2,13 @@
 
 Denne oppgaven er en innlevering i Algoritmer og Datastrukturer. 
 Oppgaven er levert av følgende student:
-* Navn Navnesen, S123456, s123456@oslomet.no
+* Navn Hamid Hamrah, S362052, s362052@oslomet.no
 
 
 # Oppgavebeskrivelse
 
-I oppgave 1 så gikk jeg frem ved å ...
+Oppgave1. 
+*
 
-I oppgave 2 så brukte jeg en ... til å ...
+Oppgave2. 
+* 
