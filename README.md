@@ -15,4 +15,11 @@ Oppgave1.
 * Vi plusser på endring og antall og returnere true hvis innlegging var vellyket.
 
 Oppgave2. 
-* 
+* Vi instansere antall for å telle antall forkomester av verdi
+* først så sjekker vi om verdi er null hvis ja så returnerer antall like 0;
+* Etter det så lager vi en node som skal starte fra rot node også gå videre 
+* Vi går inn i et whil loop fram til at p like null og sjekker om verdi er like p.verdi.
+* hvis verdi er lik p.verdi så plusser vi på antall og returnere vi antall;
+
+Oppgave3.
+
