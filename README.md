@@ -8,7 +8,11 @@ Oppgaven er levert av følgende student:
 # Oppgavebeskrivelse
 
 Oppgave1. 
-*
+* Vi fikke tips i Oppgaveteksten at Oppgaven er løst på 5.2.3a i kompendeit. 
+* Først så sjekker vi om at verdi som kommer inn ikke er Null hvis ja så kaster vi exception. 
+* Vi starter i roten også forsetter vi til at p er ute av treet. 
+* En endring som forekommer i linje 102 er da vi lager setter p lik en ny node. 
+* Vi plusser på endring og antall og returnere true hvis innlegging var vellyket.
 
 Oppgave2. 
 * 
