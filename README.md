@@ -22,4 +22,11 @@ Oppgave2.
 * hvis verdi er lik p.verdi så plusser vi på antall og returnere vi antall;
 
 Oppgave3.
+* Her skal vi lage førstePostOrden og nestPostoden.
+* i FørstPostorden så ser vi om node.venste eller like null hvis ja så setter vi nod like node sin høyre. 
+* sammen gjelder hvis node.høyre er ikke like null så setter vi node like node.høyre.
+* I nestPostOrden så har flere tilfeller som skal sjekkes
+* Methode førstePostOrden brukes også her. 
+
+Oppgave4. 
 
