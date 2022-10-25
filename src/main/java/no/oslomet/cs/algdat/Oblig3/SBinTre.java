@@ -83,7 +83,7 @@ public class SBinTre<T> {
         return antall == 0;
     }
 
-    public boolean leggInn(T verdi) {
+    public boolean leggInn(T verdi) { // er kopiert fra Kompendiet 5.3.2a
 
         Objects.requireNonNull(verdi, "Ulovlig med nullverdier!");
 
@@ -138,11 +138,54 @@ public class SBinTre<T> {
     }
 
     private static <T> Node<T> førstePostorden(Node<T> p) {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        Node<T> node = p;
+        while (node != null){
+            if (node.venstre != null){
+                node = node.venstre;
+            }
+            else if (node.høyre != null){
+                node = node.høyre;
+            }
+            else{
+                break;
+            }
+        }
+        return node;
     }
 
     private static <T> Node<T> nestePostorden(Node<T> p) {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        Node<T> node = p;
+        Node<T> prevNode = null;
+        if (node.høyre != null){
+            prevNode = node.høyre;
+        }
+
+        Node<T> firstP = førstePostorden(p);
+
+        while (node != null){
+            if (node == firstP || node == p){
+                prevNode = node;
+                node = node.forelder;
+            }
+            else{
+                if (node.høyre != null && node.høyre == prevNode){
+                    return node;
+                }
+                else if (node.venstre != null && node.venstre != null && node.venstre != prevNode){
+                    prevNode = node;
+                    node = node.venstre;
+                }
+                else if (node.høyre != null && node.høyre != firstP){
+                    prevNode = node;
+                    node = node.høyre;
+                }
+                else if (node.høyre == null){
+                    return node;
+                }
+            }
+        }
+        return null;
+
     }
 
     public void postorden(Oppgave<? super T> oppgave) {
