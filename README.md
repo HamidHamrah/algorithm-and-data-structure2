@@ -28,5 +28,13 @@ Oppgave3.
 * I nestPostOrden så har flere tilfeller som skal sjekkes
 * Methode førstePostOrden brukes også her. 
 
-Oppgave4. 
+Oppgave4.
+* I Oppgave 4 så har jeg brukt loggikken fra Oppgave 3
+* Dette er løst ved å bruke en iterative metode og en rekrusive metode. 
+* Først så finner den node i postOrden også bruker den nestPostOrden. 
+* Den rekrusive methoden sjekker først om basis tilfellet er utfluyt hvis ja så kaller den seg selv 
+
+
+
+
 
